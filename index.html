@@ -10,17 +10,51 @@
   <!--<a href="/home/vitor/projetos web/Pesquisa_inteligente/index.html">Link</a>-->
     <script src="JavaScript.js"></script>
 
-    <form id="worked-hours">
-        
-        <label class="alinha" for="Entry-time">Horario de entrada:</label>
-        <input type="time" id="entry_time" name="entry_time">
-        
-        <label for="Leaving-time">Horario de saida:</label>
-        <input type="time" id="leaving_time">
+    <div class="center">
+      <form id="worked-hours">
+          
+          <!--<label class="alinha" for="Entry-time">Horario de entrada:</label>
+          <input type="time" id="entry_time" name="entry_time">
+          <br>
+          <label for="Leaving-time">Horario de saida:</label>
+          <input type="time" id="leaving_time">-->
 
-        <button type="button" class="btn btn-secondary" onclick="WorkedTime()" value="submit">Calcular</button>
-    </form> 
+          <div class="row mb-3">
+            
+            <div class="text-col">
+              <label for="entry-time" class="col-sm-2 col-form-label">Horario de entrada</label>
+            </div>
+            
+            <div class="col-sm-10">
+              <input type="time" class="form-control" id="entry_time">
+            </div>
+          
+          </div>
+          
+          <div class="row mb-3">
+            
+            <div class="text-col">
+              <label for="leaving_time" class="col-sm-2 col-form-label">Horario de saida</label>
+            </div>
 
-    <div id="result"></div>
-</body> 
+            <div class="col-sm-10">
+              <input type="time" class="form-control" id="leaving_time">
+            </div>
+          
+          </div>
+
+          <div class="button">
+            <button type="button" class="btn btn-secondary" onclick="WorkedTime()" value="submit">Calcular</button>
+          </div>
+          
+          <div class="display">
+            
+            <div class="result-text">Tempo trabalhado</div>
+
+            <div id="result" class="result"></div>
+          </div>
+        </form> 
+    </div>
+
+  </body> 
 </html> 
