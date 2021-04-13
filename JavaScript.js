@@ -28,7 +28,7 @@ function WorkedTime(entry_time, leaving_time){
         document.getElementById('result').innerHTML = formated_hours + ':' + formated_minutes;
         
                 
-    }else{
+    } else{
         console.log("invalid time");
         document.getElementById('result').innerHTML = "00:00";
     }    

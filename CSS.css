@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+span{
+    color: rgb(239, 219, 255);
+    font-weight: 700;
+    font-size: 21px;
+}
+
 
 body, html{
     height: 100%;
@@ -8,77 +15,96 @@ body, html{
 .bg-img{
     background-image: url(social-media-5187243.png);
     
-    
     filter: blur(8px);
     -webkit-filter: blur(3px);
     
     
     height: 100%;
   
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .center{
-    /*
-    margin: auto;
-    width: 50%;
-    height: 350px;
-    border: 3px solid rgb(61, 57, 126);
-    padding: 20px;
-    padding-top: 40px;
-    text-align: end;
-    */
     
     margin: auto;
     height: 350px;
+    padding: 20px;
 
-    background-color: rgb(0,0,0);        
-    background-color: rgba(0,0,0, 0.4);  
-    color: white;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: end;
+
+    background-color: rgba(62, 26, 98, 0.45);  
     border: 3px solid #997de6;
+    border-radius: 3px;
+
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
     width: 50%;
-    padding: 20px;
-    text-align: end;
-    
 }
 
 .display{
-    margin-top: 100px;
-    margin-bottom: 1rem !important;
+    
     height: 50px;
-    display: flex;
+    display: flex;    
 
-    width: 339px;
-    margin-left: 100px;
+    width: 373px;
+
+    position: relative;
+    left: 20%;
+    top: 95px;
+
+    align-items: center;
+    align-content: center;    
+    
+    background-color: rgba(48, 7, 87, 0.84);
+    border: 3px solid rgba(48, 7, 87, 0.84);
+    border-radius: 2px;
 }
 
 .result-text{
-    margin: 3px;
-    width: 155px;
-    height: 30px;
-    text-align: right;
-    margin-left: 30%;
-    margin-right: 2%;
+    margin: 0px;
+    width: 200px;
+    height: 50px;
     
+    text-align: center;
+    position: relative;
+    left: 10px;
+    top: 6px;
+    
+}
+
+.result-text-span{
+    font-size: 25px;
+    /*background-color: rgba(48, 7, 87, 0.84);
+    border: 5px solid rgba(48, 7, 87,.2);*/
+
     
 }
 
 .result{
-    width: 60px;
     text-align: center;
-    height: 46%;
-    border: 3px solid rgb(61, 57, 126);
+    width: 104px;
+    height: 47px;
 
-    margin-top: 1px;
+    /*background-color: rgba(48, 7, 87, 0.84);
+    border: 0px solid rgba(48, 7, 87, 0.84);*/
+    color:rgb(239, 219, 255);
+    
+    margin-top: 0px;
+    margin-left: 2px;
+    padding-bottom: 0px;
+    padding-top: 0px;    
+    
+    position: relative;
+    bottom: 0px;
+    left: 40px;
+    font-size: 30px;
+    
 }
 
 .button{
@@ -92,7 +118,8 @@ body, html{
 
 .row{
     margin-top: 3.5px;    
-    background-color: rgba(57, 12, 100, 0.74);
+    background-color: rgba(48, 7, 87, 0.84);
+    border-radius: 3px;
 }
 
 .mb-3 {
@@ -118,25 +145,25 @@ body, html{
 
 
 
+
 #entry_time{
-    
-    padding-top: 5px;
+    margin-top: 4px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+
     border-radius: 5px;
     border-width: 0px;
     border: none;
+    
     background-color: rgba(224, 206, 242, 0.83);
-    margin-top: 3,5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-top: 0,5px;
-
 }
 
  
 
 
 #leaving_time {
-    margin-top: 0px;
+    margin-top: 4px;
 
     padding-top: 8px;
     padding-bottom: 8px;
@@ -144,6 +171,7 @@ body, html{
     border-radius: 5px;
     border-width: 0px;
     border: none;
+
     background-color: rgba(224, 206, 242, 0.83);
 }
 
