@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8"> 
+  <title> Desafio Ahgora </title> 
+  <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="CSS.css">
+</head> 
+<body> 
+  
+    <script src="JavaScript.js"></script>
+    
+    <div class="bg-img"></div>
+      
+    <div class="center">
+      <form id="worked-hours">
+
+          <div class="row a">
+            
+            <div class="text-col">
+              <label for="entry-time" class="col-sm-2 col-form-label"><span>HORÁRIO DE ENTRADA</span></label>
+            </div>
+            
+            <div class="col-sm-10">
+              <input type="time" class="form-control" id="entry_time" onchange="WorkedTime(this.value)">
+            </div>
+          
+          </div>
+          
+          <div class="row b">
+            
+            <div class="text-col">
+              <label for="leaving_time" class="col-sm-2 col-form-label"><span>HORÁRIO DE SAÍDA</span></label>
+            </div>
+
+            <div class="col-sm-10">
+              <input type="time" class="form-control" id="leaving_time" onchange="WorkedTime(this.value)">
+            </div>
+          
+          </div>
+          
+          <div class="display">
+            
+            <div class="result-text"><span class="result-text-span">HORAS TRABALHADAS</span></div>
+
+            <div id="result" class="result">00:00</div>
+          </div>
+        </form> 
+    </div>
+  </body> 
+</html> 
